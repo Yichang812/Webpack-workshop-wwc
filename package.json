@@ -6,6 +6,7 @@
   "author": "Yichang <yichang.li@zalora.com>",
   "license": "MIT",
   "scripts": {
+    "build": "webpack --mode development",
     "start": "webpack-dev-server --mode development --config ./examples/05-devServer/webpack.config.js --hot",
     "build:babel": "webpack --mode development --config ./examples/01-babel/webpack.config.js",
     "build:sass": "webpack --mode development --config ./examples/02-sass/webpack.config.js",
@@ -15,7 +16,6 @@
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
     "html-loader": "^0.5.5",

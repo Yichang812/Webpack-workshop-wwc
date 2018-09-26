@@ -29,16 +29,15 @@ module.exports = {
 			{ 
 				test: /\.sass$/, 
 				use: [
-					"style-loader", // creates style nodes from JS strings
-					// MiniCssExtractPlugin.loader, // extracts CSS into separate files
+					MiniCssExtractPlugin.loader, // extracts CSS into separate files
 					"css-loader", // translates CSS into CommonJS
 					"sass-loader" // compiles Sass to CSS, using Node Sass by default
 				]
 			}
 		]
 	},
-	// plugins: [
-	// 	new MiniCssExtractPlugin()
-	// ],
+	plugins: [
+		new MiniCssExtractPlugin()
+	],
 	
 };

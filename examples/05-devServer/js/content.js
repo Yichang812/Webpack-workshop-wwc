@@ -1,5 +1,5 @@
 'use strict';
 
-const content = "It's working ??? Yes!!";
+const content = 'It\'s working ???';
 
 export { content };

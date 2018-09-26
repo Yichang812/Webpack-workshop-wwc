@@ -7,24 +7,23 @@ const Webpack = require("webpack");
 module.exports = {
 
 	// Define the entry point
-	entry: path.resolve(__dirname, "js", "app.js"),
+	entry: path.resolve(__dirname, "js/app.js"), // Absolute path
 
 	// Output configuration
 	output: {
-		path: path.resolve(__dirname, "dist"),
+		path: path.resolve(__dirname, "dist"), // Absolute path
 		filename: "bundle.js"
     },
 
-	// module: {
-    //     rules: [
-    //         {
-    //             test: /\.js$/,
-    //             exclude: /node_modules/,
-    //             use: {
-    //                 loader: "babel-loader"
-    //             }
-    //         }
-    //     ]
-    // }
+	module: {
+        rules: [
+            {
+                test: /\.js$/, // Condition
+                use: {
+                    loader: "babel-loader"
+                }
+            }
+        ]
+    }
    
 };
