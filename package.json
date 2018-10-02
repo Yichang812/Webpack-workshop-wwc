@@ -1,17 +1,13 @@
 {
   "name": "Webpack-workshop-wwc",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "repository": "git@github.com:Yichang812/Webpack-workshop-wwc.git",
   "author": "Yichang <yichang.li@zalora.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode development",
-    "start": "webpack-dev-server --mode development --config ./examples/05-devServer/webpack.config.js --hot",
-    "build:babel": "webpack --mode development --config ./examples/01-babel/webpack.config.js",
-    "build:sass": "webpack --mode development --config ./examples/02-sass/webpack.config.js",
-    "build:plugin": "webpack --mode development --config ./examples/03-plugin/webpack.config.js",
-    "build:sourceMap": "webpack --mode development --config ./examples/04-sourceMap/webpack.config.js"
+    "build": "./node_modules/webpack/bin/webpack.js",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

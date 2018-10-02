@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const path = require("path");
 const Webpack = require("webpack");
@@ -7,7 +7,7 @@ const Webpack = require("webpack");
 module.exports = {
 
 	// Define the entry point
-	entry: path.resolve(__dirname, "js/app.js"), // Absolute path
+	entry: path.resolve(__dirname, "js/index.js"), // Absolute path
 
 	// Output configuration
 	output: {

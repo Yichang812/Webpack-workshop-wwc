@@ -1,5 +1,10 @@
 'use strict';
 
-const content = 'It\'s working ???';
+const message1 = 'Hi everyone from Women Who Code!';
 
-export { content };
+const message2 = 'This is a random message :p';
+
+export {
+    message1,
+    message2
+};
