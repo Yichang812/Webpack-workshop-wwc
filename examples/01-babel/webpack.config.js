@@ -1,18 +1,18 @@
 'use strict';
 
-const path = require("path");
-const Webpack = require("webpack");
+const path = require('path');
+const Webpack = require('webpack');
 
 // Our configuration
 module.exports = {
 
 	// Define the entry point
-	entry: path.resolve(__dirname, "js/index.js"), // Absolute path
+	entry: path.resolve(__dirname, 'js/index.js'), // Absolute path
 
 	// Output configuration
 	output: {
-		path: path.resolve(__dirname, "dist"), // Absolute path
-		filename: "bundle.js"
+		path: path.resolve(__dirname, 'dist'), // Absolute path
+		filename: 'bundle.js'
     },
 
 	module: {
@@ -20,7 +20,7 @@ module.exports = {
             {
                 test: /\.js$/, // Condition
                 use: {
-                    loader: "babel-loader"
+                    loader: 'babel-loader'
                 }
             }
         ]
